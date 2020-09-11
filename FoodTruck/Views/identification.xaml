@@ -1,0 +1,18 @@
+﻿<Window x:Class="FoodTruck.Views.identification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FoodTruck.Views"
+        mc:Ignorable="d"
+        Title="identification" Height="200" Width="400">
+    <Grid>
+        <Label Content="Identifiant" HorizontalAlignment="Left" Height="32" Margin="10,21,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <Label Content="Mot de Passe" HorizontalAlignment="Left" Height="32" Margin="10,58,0,0" VerticalAlignment="Top" Width="84"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,62,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <Button Content="se connecter" HorizontalAlignment="Left" Margin="88,99,0,0" VerticalAlignment="Top" Width="223" Height="30" Click="Button_Click"/>
+        <Label Content="créer un nouveau compte" HorizontalAlignment="Left" Margin="121,137,0,0" VerticalAlignment="Top" Height="32"/>
+
+    </Grid>
+</Window>
