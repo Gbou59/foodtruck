@@ -8,20 +8,20 @@
         Title="inscription" Height="350" Width="600">
     <Grid>
         <Label Content="Nom" HorizontalAlignment="Left" Margin="77,40,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,42,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,42,0,0" TextWrapping="Wrap" Text="{Binding Nom}" VerticalAlignment="Top" Width="330"/>
         <Label Content="droitadmin" HorizontalAlignment="Left" Margin="77,226,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,228,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,228,0,0" TextWrapping="Wrap" Text="{Binding Droitadmin}" VerticalAlignment="Top" Width="330"/>
         <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="77,195,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,197,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,197,0,0" TextWrapping="Wrap" Text="{Binding Motdepasse}" VerticalAlignment="Top" Width="330"/>
         <Label Content="Identifiant" HorizontalAlignment="Left" Margin="77,164,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,166,0,0" TextWrapping="Wrap" Text="{Binding Identifiant}" VerticalAlignment="Top" Width="330" />
         <Label Content="Email" HorizontalAlignment="Left" Margin="77,133,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,135,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,135,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="330"/>
         <Label Content="Telephone" HorizontalAlignment="Left" Margin="77,102,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,104,0,0" TextWrapping="Wrap" Text="{Binding Telephone}" VerticalAlignment="Top" Width="330"/>
         <Label Content="Prenom" HorizontalAlignment="Left" Margin="77,71,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330"/>
-        <Button Content="Création compte utilisateur" HorizontalAlignment="Left" Margin="77,270,0,0" VerticalAlignment="Top" Width="442"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="189,73,0,0" TextWrapping="Wrap" Text="{Binding Prenom}" VerticalAlignment="Top" Width="330"/>
+        <Button Content="Création compte utilisateur" Command="{Binding NewUser}" HorizontalAlignment="Left" Margin="77,270,0,0" VerticalAlignment="Top" Width="442"/>
 
     </Grid>
 </Window>

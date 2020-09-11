@@ -8,11 +8,11 @@
         Title="identification" Height="200" Width="400">
     <Grid>
         <Label Content="Identifiant" HorizontalAlignment="Left" Height="32" Margin="10,21,0,0" VerticalAlignment="Top" Width="84"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,25,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,25,0,0" TextWrapping="Wrap" Text="{Binding Identifiant}" VerticalAlignment="Top" Width="250"/>
         <Label Content="Mot de Passe" HorizontalAlignment="Left" Height="32" Margin="10,58,0,0" VerticalAlignment="Top" Width="84"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,62,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="250"/>
-        <Button Content="se connecter" HorizontalAlignment="Left" Margin="88,99,0,0" VerticalAlignment="Top" Width="223" Height="30" Click="Button_Click"/>
-        <Label Content="créer un nouveau compte" HorizontalAlignment="Left" Margin="121,137,0,0" VerticalAlignment="Top" Height="32"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="121,62,0,0" TextWrapping="Wrap" Text="{Binding Motdepasse}" VerticalAlignment="Top" Width="250"/>
+        <Button Content="se connecter" Command="{Binding ConnectUtil}" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="176" Height="30"/>
+        <Button Content="Nouvel Utilisateur" Command="{Binding NewUserNav}" HorizontalAlignment="Left" Margin="201,103,0,0" VerticalAlignment="Top" Width="170" Height="30"/>
 
     </Grid>
 </Window>
